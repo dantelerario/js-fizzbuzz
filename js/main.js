@@ -5,3 +5,10 @@ console.log('OK');
 // per i multipli di 3 stampi “Fizz” al posto del numero
 // per i multipli di 5 stampi Buzz.
 // per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+
+var numList = []
+
+for (var i = 1; i < 101; i++) {
+  numList.push( i );
+  console.log(numList);
+}
