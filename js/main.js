@@ -9,6 +9,7 @@ console.log('OK');
 
 var numList = [];
 var btnShow = document.getElementById('show');
+var btnReset = document.getElementById('reset');
 
 btnShow.addEventListener('click',
   function() {
@@ -28,4 +29,11 @@ btnShow.addEventListener('click',
     console.log(numList);
     document.getElementById("listanumeri").innerHTML = numList;
   }
+)
+
+btnReset.addEventListener('click',
+  function() {
+    numList = [];
+    document.getElementById("listanumeri").innerHTML = numList;
+ }
 )
