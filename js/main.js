@@ -8,20 +8,24 @@ console.log('OK');
 
 
 var numList = [];
+var btnShow = document.getElementById('show');
 
-for (var i = 1; i < 101; i++) {
-  var nuovoNumero = i;
+btnShow.addEventListener('click',
+  function() {
+    for (var i = 1; i < 101; i++) {
+      var nuovoNumero = i;
 
-  if (nuovoNumero % 5 == 0 && nuovoNumero % 3 == 0) {
-    numList.push('FizzBuzz');
-  } else if (nuovoNumero % 3 == 0) {
-    numList.push('Fizz');
-  } else if (nuovoNumero % 5 == 0) {
-    numList.push('Buzz');
-  } else {
-    numList.push(nuovoNumero);
+      if (nuovoNumero % 5 == 0 && nuovoNumero % 3 == 0) {
+        numList.push('FizzBuzz');
+      } else if (nuovoNumero % 3 == 0) {
+        numList.push('Fizz');
+      } else if (nuovoNumero % 5 == 0) {
+        numList.push('Buzz');
+      } else {
+        numList.push(nuovoNumero);
+      }
+    }
+    console.log(numList);
+    document.getElementById("listanumeri").innerHTML = numList;
   }
-
-}
-
-  console.log(numList);
+)
